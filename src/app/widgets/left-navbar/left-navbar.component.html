@@ -1,0 +1,11 @@
+<div class="container-fluid">
+    <div class="row">
+        <button [ngClass]="data?.query=='/' ? 'btn-light' : 'btn-dark'" class="btn mt-2" [routerLink]="['/']">Home</button>
+    </div>
+    <div class="row">
+        <button [ngClass]="data?.query=='/dept-list' ? 'btn-light' : 'btn-dark'" class="btn mt-2" [routerLink]="['/dept-list']">Dept</button>
+    </div>
+    <div class="row">
+        <button [ngClass]="data?.query=='/emp-list' ? 'btn-light' : 'btn-dark'" class="btn mt-2" [routerLink]="['/emp-list']">Emp</button>
+    </div>
+</div>
